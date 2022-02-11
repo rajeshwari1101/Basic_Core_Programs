@@ -16,7 +16,8 @@ namespace EmployeeWageComputation
             //BasicPrograms.Factors();
             //BasicPrograms.QuotientRem();
             //BasicPrograms.Swap();
-            BasicPrograms.Swap();
+            //BasicPrograms.Swap();
+            BasicPrograms.CheckAphabet();
             Console.ReadKey();
         }
     }

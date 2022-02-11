@@ -162,6 +162,25 @@ namespace Basic_Core_Programs
             else
                 Console.WriteLine("The no is odd");
         }
+
+        // Checks if alphabet is vowel or consonant
+        public static void CheckAphabet()
+        {
+            char[] vowels = { 'a', 'e', 'i', 'o', 'u', 'A', 'E', 'I', 'O', 'U' };
+            Console.WriteLine("Enter Charcter(a-z/A-Z): ");
+            int input = Console.Read();
+            char alphabet = Convert.ToChar(input);
+            Console.ReadLine();         // To Avoid The unread \n from affecting the other Read/Readline methods
+            if ((input >= 65 && input <= 90) || (input >= 97 && input <= 122))
+            {
+                if (vowels.Contains(alphabet))
+                    Console.WriteLine("It is a vowel");
+                else
+                    Console.WriteLine("It is a consonant");
+            }
+            else
+                Console.WriteLine("Not an Alphabet");
+        }
     }
 
 }
