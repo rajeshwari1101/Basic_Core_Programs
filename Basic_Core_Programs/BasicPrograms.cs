@@ -181,6 +181,25 @@ namespace Basic_Core_Programs
             else
                 Console.WriteLine("Not an Alphabet");
         }
+
+
+        //Largest Among Three Numbers
+        public static void Largest()
+        {
+            int n1, n2, n3;
+            Console.Write("Enter no1: ");
+            n1 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter no2: ");
+            n2 = Convert.ToInt32(Console.ReadLine());
+            Console.Write("Enter no3: ");
+            n3 = Convert.ToInt32(Console.ReadLine());
+            if (n1 > n2 && n1 > n3)
+                Console.WriteLine(n1 + " is the largest");
+            else if (n2 > n3)
+                Console.WriteLine(n2 + " is the largest");
+            else
+                Console.WriteLine(n3 + " is the largest");
+        }
     }
 
 }
