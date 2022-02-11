@@ -9,11 +9,12 @@ namespace EmployeeWageComputation
             Console.WriteLine("Hello, World!");
             //BasicPrograms.FlipCoin();
             //BasicPrograms.LeapYear();
-            //string cmdArg = Environment.GetCommandLineArgs()[1];
+            //*string cmdArg = Environment.GetCommandLineArgs()[1];
             //int n = Convert.ToInt32(cmdArg);
             //BasicPrograms.Power2(n);
             //BasicPrograms.HarmonicNo();
-            BasicPrograms.Factors();
+            //BasicPrograms.Factors();
+            BasicPrograms.QuotientRem();
             Console.ReadKey();
         }
     }

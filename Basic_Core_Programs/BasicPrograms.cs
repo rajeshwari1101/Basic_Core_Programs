@@ -83,6 +83,7 @@ namespace Basic_Core_Programs
             Console.WriteLine("Harmonic no of " + n + ": " + harmonic);
         }
 
+        //Factors Program
         public static void Factors()
         {
             int n = GetPositiveInt();
@@ -117,6 +118,22 @@ namespace Basic_Core_Programs
                 n = Convert.ToInt32(Console.ReadLine());
             } while (n < 0);
             return n;
+        }
+
+        //Program to Compute Quotient and Remainder
+        public static void QuotientRem()
+        {
+            int quotient = 0;
+            int remainder = 0;
+            int dividend = 0;
+            int divisor = 0;
+            Console.WriteLine("Enter Dividend: ");
+            dividend = GetPositiveInt();
+            Console.WriteLine("Enter Divisor: ");
+            divisor = GetPositiveInt();
+            quotient = dividend / divisor;
+            remainder = dividend % divisor;
+            Console.WriteLine("Quotient: " + quotient + " Remainder: " + remainder);
         }
     }
 
