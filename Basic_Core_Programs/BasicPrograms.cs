@@ -152,6 +152,16 @@ namespace Basic_Core_Programs
             Console.WriteLine("After Swapping....");
             Console.WriteLine("a: " + a + " b: " + b);
         }
+
+        //Check Whether a Number is Even or Odd
+        public static void OddEven()
+        {
+            int n = GetPositiveInt();
+            if (n % 2 == 0)
+                Console.WriteLine("The no is even");
+            else
+                Console.WriteLine("The no is odd");
+        }
     }
 
 }
