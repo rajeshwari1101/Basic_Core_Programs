@@ -76,18 +76,48 @@ namespace Basic_Core_Programs
         //Harmonic Number program
         public static void HarmonicNo()
         {
-            int n = 0;
             float harmonic = 0;
-            do
-            {
-                Console.Write("Enter a positive integer: ");
-                n = Convert.ToInt32(Console.ReadLine());
-            } while (n < 0);
+            int n = GetPositiveInt();
             for (int i = 1; i <= n; i++)
                 harmonic += (float)1 / (float)i;
             Console.WriteLine("Harmonic no of " + n + ": " + harmonic);
         }
 
+        public static void Factors()
+        {
+            int n = GetPositiveInt();
+            bool prime = true;
+            Console.WriteLine("The prime factors are: ");
+            for (int i = 2; i * i <= n; i++)
+            {
+                if (n % i == 0)
+                {
+                    prime = true;
+                    for (int j = 2; j <= i / 2; j++)
+                    {
+                        if (i % j == 0)
+                        {
+                            prime = false;
+                            break;
+                        }
+                    }
+                    if (prime is true)
+                        Console.Write(i + " ");
+                }
+            }
+            Console.WriteLine();
+        }
+
+        private static int GetPositiveInt()
+        {
+            int n = 0;
+            do
+            {
+                Console.Write("Enter a positive integer: ");
+                n = Convert.ToInt32(Console.ReadLine());
+            } while (n < 0);
+            return n;
+        }
     }
 
 }
