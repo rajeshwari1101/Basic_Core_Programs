@@ -73,6 +73,21 @@ namespace Basic_Core_Programs
             }
         }
 
+        //Harmonic Number program
+        public static void HarmonicNo()
+        {
+            int n = 0;
+            float harmonic = 0;
+            do
+            {
+                Console.Write("Enter a positive integer: ");
+                n = Convert.ToInt32(Console.ReadLine());
+            } while (n < 0);
+            for (int i = 1; i <= n; i++)
+                harmonic += (float)1 / (float)i;
+            Console.WriteLine("Harmonic no of " + n + ": " + harmonic);
+        }
+
     }
 
 }
