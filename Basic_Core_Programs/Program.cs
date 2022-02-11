@@ -8,7 +8,10 @@ namespace EmployeeWageComputation
         {
             Console.WriteLine("Hello, World!");
             //BasicPrograms.FlipCoin();
-            BasicPrograms.LeapYear();
+            //BasicPrograms.LeapYear();
+            string cmdArg = Environment.GetCommandLineArgs()[1];
+            int n = Convert.ToInt32(cmdArg);
+            BasicPrograms.Power2(n);
             Console.ReadKey();
         }
     }

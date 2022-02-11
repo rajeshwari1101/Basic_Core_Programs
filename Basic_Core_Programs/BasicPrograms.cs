@@ -57,6 +57,22 @@ namespace Basic_Core_Programs
                 Console.WriteLine("It is not a leap year");
         }
 
+        //Power of 2 program
+        public static void Power2(int n)
+        {
+            int pow2 = 0;
+            while (n < 0 || n > 30)
+            {
+                Console.Write("Enter a n(0-30): ");
+                n = Convert.ToInt32(Console.ReadLine());
+            }
+            for (int i = 0; i <= n; i++)
+            {
+                pow2 = Convert.ToInt32(Math.Pow(2, i));
+                Console.WriteLine("2^" + i + " = " + pow2);
+            }
+        }
+
     }
 
 }
