@@ -7,7 +7,8 @@ namespace EmployeeWageComputation
         static void Main(string[] args)
         {
             Console.WriteLine("Hello, World!");
-            BasicPrograms.FlipCoin();
+            //BasicPrograms.FlipCoin();
+            BasicPrograms.LeapYear();
             Console.ReadKey();
         }
     }
